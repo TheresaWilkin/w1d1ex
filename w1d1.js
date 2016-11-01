@@ -7,7 +7,7 @@ function whoAmI(name, age) {
   if (name === undefined || age === undefined) {
     console.error("Arguments not valid");
 }
-  else if (typeof name !== "string" || age.isNaN) {
+  else if (typeof name !== "string" || isNaN(age)) {
     console.error("Arguments invalid");
   }
   else{
